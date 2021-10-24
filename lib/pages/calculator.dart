@@ -23,7 +23,7 @@ class Calculator extends StatelessWidget {
         backgroundColor: Theme.of(context).backgroundColor,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(12.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -37,7 +37,7 @@ class Calculator extends StatelessWidget {
               autofocus: true,
               textAlign: TextAlign.right,
             ),
-            const SizedBox(height: 24.0),
+            const SizedBox(height: 48.0),
             Expanded(child: generateKeyboard()),
           ],
         ),
@@ -190,7 +190,7 @@ class CalcButton extends StatelessWidget {
               data.text,
               style: TextStyle(
                 color: data.textColor,
-                fontSize: 24,
+                fontSize: 36,
               ),
               textAlign: TextAlign.center,
             ),
@@ -282,7 +282,7 @@ List<List<ButtonData>> keyboardLayout = [
     ButtonData.fromMaterialColor(
         color: Colors.lightBlue, text: '.', action: Action.insert),
     ButtonData.fromMaterialColor(
-        color: Colors.lightBlue, text: '<=', action: Action.backspace),
+        color: Colors.orange, text: '<=', action: Action.backspace),
     ButtonData.fromMaterialColor(
         color: Colors.deepPurple, text: '=', action: Action.evaluate),
   ],
