@@ -36,6 +36,12 @@ class Calculator extends StatelessWidget {
               ),
               autofocus: true,
               textAlign: TextAlign.right,
+              decoration: InputDecoration(
+                border: InputBorder.none,
+              ),
+              cursorColor: Colors.black,
+              cursorRadius: Radius.circular(3.0),
+              cursorWidth: 3,
             ),
             const SizedBox(height: 48.0),
             Expanded(child: generateKeyboard()),
